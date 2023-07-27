@@ -1,50 +1,62 @@
+// size
+$pxone: 10px;
+$pxtwo: 50px;
+$pxthree: 5px;
+$pxsix: 22px;
+$pxseven: -10px;
+$pxheight: -7px;
+$pxnine: -5px;
+$pxten: -15px;
+$pxeleven: -25px;
+$pxtwelve: 20px;
+$pxthirteen: -30px;
 
 @media screen and (max-width: 320px) {
     .pañaleraicon {
-      width: 50px;
-      height: 50px;
-      margin: 5px;
-      margin-left: -10px;
+      width: $pxtwo;
+      height: $pxtwo;
+      margin: $pxthree;
+      margin-left: $pxseven;
     }
   
     .navuno {
-      width: 10px;
-      height: 10px;
-      margin: 22px;
+      width: $pxone;
+      height: $pxone;
+      margin: $pxsix;
     }
   
     .inputuno {
-      width: 10px;
-      height: 10px;
-      margin: -7px;
+      width: $pxone;
+      height: $pxone;
+      margin: $pxheight;
     }
   
     .buttonuno {
-      width: 10px;
-      height: 10px;
-      margin: -7px;
+      width: $pxone;
+      height: $pxone;
+      margin: $pxheight;
     }
   
     .palabrabutton {
-      font-size: 10px;
-      margin: -5px;
-      margin-left: -15px;
+      font-size: $pxone;
+      margin: $pxnine;
+      margin-left: $pxten;
     }
   
     .navbartwo {
-      width: 5px;
-      height: 10px;
+      width: $pxthree;
+      height: $pxone;
     }
   
     .navpalabra {
       position: relative;
-      top: -25px;
-      margin-right: 20px;
+      top: $pxeleven;
+      margin-right: $pxtwelve;
     }
   
     .carritoimagen {
-      width: 50px;
-      height: 50px;
-      margin-left: -30px;
+      width: $pxtwo;
+      height: $pxtwo;
+      margin-left: $pxthirteen;
     }
 }
