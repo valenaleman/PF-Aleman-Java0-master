@@ -599,4 +599,37 @@ asignarPermiso = (nombreUsuario === 'User1') ? PERMISO_CONCEDIDO : PERMISO_DENEG
 
 console.log(asignarPermiso);
 
-// 
+// Operadores logicos
+
+// And
+
+let numerocuatro = 20;
+
+if (numerocuatro > 0) {
+    console.log('numerocuatro es mayor a 0');
+} 
+
+numerocuatro > 0 && console.log('numerocuatro es mayor a 0');
+
+// Hacemos el objeto en un registro
+
+const usuario = {
+    nombreUsuario: 'Claudia1970',
+    nombre: 'Claudia',
+    apellido: 'Acosta',
+    edad: '',
+    estadoCivil: '',
+}
+
+const validacionVacio =  usuario.nombreUsuario != '' && usuario.nombre != '' && usuario.apellido != '' && usuario.edad != '' && usuario.estadoCivil != '';
+
+if (validacionVacio === false) {
+    console.log('Hay campos vacios');
+} else {
+    console.log('Validación pasada');
+}
+
+validacionVacio === false ? console.log('Hay campos vacios') : console.log('Validación pasada!');
+
+console.log(0 || NaN || undefined || null || '' || '' || false || 'Hola estas en la página de la placita' || 'Esperemos volver a verte');
+console.log(true && 2020 && usuario && 'Maria' && '');

@@ -556,3 +556,96 @@ localStorage.removeItem('otraclave');
 // Remover todos los elementos del session/localstorage
 
 //localStorage.clear();
+
+// Operador de postincremento
+
+// Ejecutación de la sentencia y incremento
+
+let añouno = 2020;
+
+function mostrarDato(añouno) {
+    console.log(añodos);
+}
+
+mostrarDato(añouno++);
+
+mostrarDato(añouno);
+
+// Operador preincremento
+
+// Hacemos el incremento y luego la sentencia
+
+let añodos = 2023;
+
+mostrarDato(++añodos);
+
+// Operador teernario
+
+let nombreUsuario = 'user1';
+
+if (nombreUsuario === 'user1') {
+    console.log('Permiso concedido');
+} else {
+    console.log('Permiso denegado');
+}
+
+// Ejecutamos en una sola sentencia la resolución de un condicional, esta camuflado en un operador teernario
+
+//(nombreUsuario === 'user1') ? console.log('Permiso concedido') : console.log('Permiso denegado');
+
+let asignarPermiso;
+
+const PERMISO_CONCEDIDO = 2020;
+
+const PERMISO_DENEGADO = 2023;
+
+// Con condicional 1
+
+if (nombreUsuario === ' user1') {
+    permiso = PERMISO_CONCEDIDO;
+} else {
+    permiso = PERMISO_DENEGADO;
+}
+
+// Con ternario
+
+asignarPermiso = (nombreUsuario === 'User1') ? PERMISO_CONCEDIDO : PERMISO_DENEGADO;
+
+(nombreUsuario === 'user1') ? llamarVista1() : llamarVista2();
+
+console.log(asignarPermiso);
+
+// Operadores logicos
+
+// And
+
+let numerocuatro = 20;
+
+if (numerocuatro > 0) {
+    console.log('numerocuatro es mayor a 0');
+} 
+
+numerocuatro > 0 && console.log('numerocuatro es mayor a 0');
+
+// Hacemos el objeto en un registro
+
+const usuario = {
+    nombreUsuario: 'Claudia1970',
+    nombre: 'Claudia',
+    apellido: 'Acosta',
+    edad: '',
+    estadoCivil: '',
+}
+
+const validacionVacio =  usuario.nombreUsuario != '' && usuario.nombre != '' && usuario.apellido != '' && usuario.edad != '' && usuario.estadoCivil != '';
+
+if (validacionVacio === false) {
+    console.log('Hay campos vacios');
+} else {
+    console.log('Validación pasada');
+}
+
+validacionVacio === false ? console.log('Hay campos vacios') : console.log('Validación pasada!');
+
+console.log(0 || NaN || undefined || null || '' || '' || false || 'Hola estas en la página de la placita' || 'Esperemos volver a verte');
+console.log(true && 2020 && usuario && 'Maria' && '');
