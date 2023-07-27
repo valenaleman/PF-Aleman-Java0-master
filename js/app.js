@@ -540,3 +540,63 @@ localStorage.removeItem('otraclave');
 // Remover todos los elementos del session/localstorage
 
 //localStorage.clear();
+
+// Operador de postincremento
+
+// Ejecutación de la sentencia y incremento
+
+let añouno = 2020;
+
+function mostrarDato(añouno) {
+    console.log(añodos);
+}
+
+mostrarDato(añouno++);
+
+mostrarDato(añouno);
+
+// Operador preincremento
+
+// Hacemos el incremento y luego la sentencia
+
+let añodos = 2023;
+
+mostrarDato(++añodos);
+
+// Operador teernario
+
+let nombreUsuario = 'user1';
+
+if (nombreUsuario === 'user1') {
+    console.log('Permiso concedido');
+} else {
+    console.log('Permiso denegado');
+}
+
+// Ejecutamos en una sola sentencia la resolución de un condicional, esta camuflado en un operador teernario
+
+//(nombreUsuario === 'user1') ? console.log('Permiso concedido') : console.log('Permiso denegado');
+
+let asignarPermiso;
+
+const PERMISO_CONCEDIDO = 2020;
+
+const PERMISO_DENEGADO = 2023;
+
+// Con condicional 1
+
+if (nombreUsuario === ' user1') {
+    permiso = PERMISO_CONCEDIDO;
+} else {
+    permiso = PERMISO_DENEGADO;
+}
+
+// Con ternario
+
+asignarPermiso = (nombreUsuario === 'User1') ? PERMISO_CONCEDIDO : PERMISO_DENEGADO;
+
+(nombreUsuario === 'user1') ? llamarVista1() : llamarVista2();
+
+console.log(asignarPermiso);
+
+// 
