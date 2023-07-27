@@ -1,0 +1,81 @@
+// font 
+$font-family: 'Raleway', sans-serif;
+
+// font size
+$fontLarge: 500;
+$fontMedium: 400;
+$fontShort: 300;
+$fontSmall: 200;
+$fontSmallest: 100;
+
+// colors
+$oneColor: lightblue;
+$secondColor: gray;
+$threeColor: lightgreen;
+
+// size
+$onepx: 80px;
+
+// position
+$padding: 20px;
+$margin: 0 auto;
+$center: center;
+$right: right;
+$twoMargin: 200px;
+$width: 50%;
+$twoWidth: 100%;
+
+h2 {
+    font-family: $font-family;
+    font-weight: $fontLarge;
+}
+
+h3 {
+    font-family: $font-family;
+    font-weight: $fontSmall;
+}
+
+h4 {
+    background-color: $secondColor;
+    padding: $padding;
+    margin: $margin;
+    width: $width;
+    font-family: $font-family;
+    font-weight: $fontSmallest;
+}
+
+h5 {
+    font-family: $font-family;
+    font-weight: $fontMedium;
+}
+
+h6 {
+    font-family: $font-family;
+    font-weight: $fontSmallest;
+}
+
+.bluebox {
+    background-color: $oneColor;
+    padding: $padding;
+    margin: $margin;
+    width: $twoWidth;
+}
+
+.dirección {
+    text-align: $right;
+}
+
+.txt {
+    color: $threeColor;
+}
+
+.p2 { 
+    margin: $twoMargin;
+}
+
+@media screen and (max-width: 320px) {
+    .pañaleraicon {
+        width: $onepx;
+        height: $onepx;
+     }
+}
