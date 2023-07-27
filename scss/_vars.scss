@@ -13,9 +13,6 @@ $oneColor: lightblue;
 $secondColor: gray;
 $threeColor: lightgreen;
 
-// size
-$onepx: 80px;
-
 // position
 $padding: 20px;
 $margin: 0 auto;
@@ -71,11 +68,4 @@ h6 {
 
 .p2 { 
     margin: $twoMargin;
-}
-
-@media screen and (max-width: 320px) {
-    .pañaleraicon {
-        width: $onepx;
-        height: $onepx;
-     }
 }
