@@ -685,3 +685,20 @@ function mostrarUnUsuarioV2 ({username, apellido, nombre, edad}) {
         console.log('El usuario no es de avanzada edad')
     }
 }
+
+// Concatenar array
+
+const array = [ 20, 21, 22, 23, 'Maria del Carmen', 'Pedro'];
+
+const array2 = [ 'Claudia', 2023, {nombre: 'Maria del Carmen', apellido: 'Acosta'}];
+
+const array3 = array.concat(array2);
+
+console.log(array3);
+
+// Usando spread 
+
+const arrayConcatenadoSPREAD = [...array, ...array2];
+
+console.log(arrayConcatenadoSPREAD);
+

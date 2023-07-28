@@ -10,4 +10,3 @@ console.log(Math.max(...valores))
 console.log(valores);
 
 console.log(...valores);
-
