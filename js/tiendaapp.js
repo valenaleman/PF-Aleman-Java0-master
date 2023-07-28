@@ -703,3 +703,72 @@ validacionVacio === false ? console.log('Hay campos vacios') : console.log('Vali
 
 console.log(0 || NaN || undefined || null || '' || '' || false || 'Hola estas en la página de la placita' || 'Esperemos volver a verte');
 console.log(true && 2020 && usuario && 'Maria' && '');
+
+// Destructuring
+
+const usuario2 = {
+    username: 'MaryA23',
+    nombre:'Maria',
+    apellido: 'Acosta',
+    edad: 65,
+    estadoCivil: null
+}
+
+// Imprimimos por consola los valores de los atributos de usuario
+
+function mostrarUnUsuario (username, nombreuno, apellidouno, edad) {
+    console.log(username);
+    console.log(apellidouno);
+    console.log(nombreuno);
+    if (edad > 70){
+       console.log('El usuario es de avanzada edad');
+    } else {
+        console.log('El usuario no es de avanzada edad');
+    }
+}
+
+// Operaciones de desestructuración
+
+let {username, nombreuno, apellidouno, edad} = usuario;
+
+mostrarUnUsuario(username, nombre, apellido, edad);
+
+// Alias
+
+let {nombreuno:nombre2,username:username2,apellidouno:apellido2,edad:edad2} = usuario2;
+
+mostrarUnUsuario(username2,nombre2,apellido2,edad2);
+
+mostrarUnUsuarioV2(usuario);
+
+mostrarUnUsuarioV2(usuario2);
+
+// Destructuración de parametros
+
+function mostrarUnUsuarioV2 ({username, apellido, nombre, edad}) {
+    console.log(`username: ${username}`);
+    console.log(`apellido: ${apellido}`);
+    console.log(`nombre: ${nombre}`);
+    if (edad > 70) {
+        console.log('El usuario es de avanzada edad');
+    } else {
+        console.log('El usuario no es de avanzada edad')
+    }
+}
+
+// Concatenar array
+
+const array = [ 20, 21, 22, 23, 'Maria del Carmen', 'Pedro'];
+
+const array2 = [ 'Claudia', 2023, {nombre: 'Maria del Carmen', apellido: 'Acosta'}];
+
+const array3 = array.concat(array2);
+
+console.log(array3);
+
+// Usando spread 
+
+const arrayConcatenadoSPREAD = [...array, ...array2];
+
+console.log(arrayConcatenadoSPREAD);
+

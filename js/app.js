@@ -702,3 +702,27 @@ const arrayConcatenadoSPREAD = [...array, ...array2];
 
 console.log(arrayConcatenadoSPREAD);
 
+// Copiar arrays
+
+class Item {
+    nombre;
+    precio;
+    cantidad;
+    marca;
+    constructor (nombre, precio, marca, cantidad) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.marca = marca;
+        this.cantidad =cantidad;
+    }
+}
+
+const stock = [new Item ('Ultrasec', 3200, 'Babysec', 60), new Item ('Premium care, piel delicada', 5900, 'Pampers', 58), new Item ('Premium care, recién nacido hipoalergénico', 2420, 'Pampers', 36), new Item ('Premium care, Recien nacido', 3200, 'Pampers', 20), new Item ('Chelino', 7600, 'Chelino', 27), new Item ('Q-SOFT', 690, 'Premium hipoalergénicas', 50)];
+
+const stock2 = stock;
+
+stock2.push(new Item ('Ultrasec', 3200, 'Babysec', 60), new Item ('Premium care, piel delicada', 5900, 'Pampers', 58), new Item ('Premium care, recién nacido hipoalergénico', 2420, 'Pampers', 36), new Item ('Premium care, Recien nacido', 3200, 'Pampers', 20), new Item ('Chelino', 7600, 'Chelino', 27), new Item ('Q-SOFT', 690, 'Premium hipoalergénicas', 50));
+
+console.log(stock);
+
+console.log(stock2);
