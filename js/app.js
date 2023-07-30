@@ -726,3 +726,27 @@ stock2.push(new Item ('Ultrasec', 3200, 'Babysec', 60), new Item ('Premium care,
 console.log(stock);
 
 console.log(stock2);
+
+// SETTIMEOut
+
+function mostrarEnPantallaHola() {
+    console.log('Hola, mira nuestros productos');
+}
+
+function mostrarEnPantallaDespuesDeHolaUnChau() {
+    console.log('Chau, gracias por mirar o comprar en nuestra página sobre los productos publicados');
+}
+
+// Secuencia 1
+
+/*mostrarEnPantallaHola();
+
+mostrarEnPantallaDespuesDeHolaUnChau();*/
+
+console.log('Se esta ejecutando el código que se va a mostrar en pantalla');
+
+setTimeout(mostrarEnPantallaHola, 3000);
+
+console.log('Se esta ejecutando el siguiente código que se va a mostrar en pantalla');
+
+setTimeout(mostrarEnPantallaDespuesDeHolaUnChau, 3000);
