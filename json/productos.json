@@ -1,0 +1,30 @@
+[ {
+    "id": 1,
+    "nombre": "Babysec - Ultrasec",
+    "precio": 3200 
+},
+{
+    "id": 2,
+    "nombre": "Pampers - Premium care, piel delicada",
+    "precio": 5900
+},
+{
+    "id": 3,
+    "nombre": "Pampers - Premium care, recién nacido hipoalergénico",
+    "precio": 2420
+},
+{
+    "id": 4,
+    "nombre": "Pampers - Premium care, Recien nacido",
+    "precio": 3200
+},
+{
+    "id": 5,
+    "nombre": "Chelino",
+    "precio": 7600
+},
+{
+    "id": 6,
+    "nombre": "Q-SOFT Premium hipoalergénicas",
+    "precio": 690
+} ]

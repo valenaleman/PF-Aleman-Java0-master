@@ -750,3 +750,33 @@ setTimeout(mostrarEnPantallaHola, 3000);
 console.log('Se esta ejecutando el siguiente código que se va a mostrar en pantalla');
 
 setTimeout(mostrarEnPantallaDespuesDeHolaUnChau, 3000);
+
+// Hago un get
+
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => {
+        if (response.ok) {
+            return response.json()
+        } else {
+            throw new Error ('Hubo un error en el servidor' +  response.status)
+        }
+    })
+      .then((todos) => console.log(todos))
+      .catch((error) => console.log(error))
+
+// Hago un get a un archivo local
+
+fetch('../json/productos.json')
+.then ((response) => {
+    if (response.ok) {
+        return response.json();
+    } else {
+    throw new Error('Hubo un error en el servidor' + response.status);
+}
+})
+.then((productos) => {
+    console.log(productos);
+})
+.catch((error) => {
+    console.log('En este momento el servidor no funciona por lo que no puede procesar la información mandada desde su computadora')
+})
