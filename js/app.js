@@ -34,27 +34,6 @@ let txt = 'La placita - Pañalera'
 console.log(txt);
 console.log(numero3);
 
-// Tipo de dato booleano
-
-let dato = true; // Tipo de dato booleano
-dato = false; // tipo de dato booleano
-
-if (true){
-    console.log('Correo ingresado')
-}
-
-// Operadores de comparación
-
-let a = 'Correo ingresado';
-let b = 'Correo ingresado';
-let resultado = a == b;
-
-console.log(resultado);
-
-if (a == b) {
-    console.log('Correo ingresado')
-}
-
 // Estrictamente distinto
 // resultado = a !== b;
 // console.log(resultado);
@@ -65,36 +44,6 @@ console.log(resultado);
 if (a !==b) {
     console.log('Son distintos')
 }
-
-// Declaración de una función
-
-function saludar() {
-    alert('Hola');
-}
-
-// Ejecuto la función
-
-saludar();
-console.log('En esta página se mostraran pañales');
-saludar();
-
-// Declaración de la función 
-function saludar () {
-    alert('Hola como va!')
-}
-
-// Usando parametros
-
-let nombrethree;
-nombrethree = prompt('Ingrese su nombre');
-
-let Cliente;
-
-Cliente = 'Hola';
-
-saludarAUnCliente(Cliente);
-
-console.log('Hago otras cosas...')
 
 // Ejemplo con parametros
 
