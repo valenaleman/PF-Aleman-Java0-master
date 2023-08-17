@@ -34,18 +34,7 @@ let txt = 'La placita - Pañalera'
 console.log(txt);
 console.log(numero3);
 
-// Agrego popup
 
-alert('Te vamos a pedir que ingreses el correo electronico');
-
-let correo = prompt('Ingrese su correo electronico');
-
-if (correo) {
-    correo = prompt('Ingrese su correo electrónico');
-    console.log('Verificando correo electrónico');
-}else {
-    alert('Por favor ingresar correo electrónico en el caso de no haberlo hecho');
-}
 
 // Tipo de dato booleano
 
