@@ -166,23 +166,6 @@ function calculadora(num1, num2, operacion) {
     }
 }
 
-
-saludar();
-
-function usarLaFuncion(unaFuncion) {
-    unaFuncion();
-}
-
-usarLaFuncion(function() {
-    alert('Hola, ¿cómo va?');
-})
-
-// Otra expresión de función - Arrow function
-
-const saludartres = () => {alert('Hola, ¿cómo va?')};
-
-saludar();
-
 // Scoping
 
 let variableGlobal = 6000;
