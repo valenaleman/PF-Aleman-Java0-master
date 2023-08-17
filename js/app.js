@@ -66,17 +66,6 @@ if (a !==b) {
     console.log('Son distintos')
 }
 
-// Para que necesita comprar en la pañalera
-
-let necesidad = prompt ('Ingrese ingrese la palabra Madre si es para su hijo o ingrese la palabra Adulto si es para algun familiar')
-const Madre = 'Madres que necesitan pañales o accesorios para bebés';
-
-if (necesidad >= Madre) {
-    console.log ('Le mostraremos nuestros productos para bebés') 
-}else {
-    console.log('Le mostraremos productos para adultos')
-}
-
 // Declaración de una función
 
 function saludar() {
