@@ -34,8 +34,6 @@ let txt = 'La placita - Pañalera'
 console.log(txt);
 console.log(numero3);
 
-
-
 // Tipo de dato booleano
 
 let dato = true; // Tipo de dato booleano
@@ -97,12 +95,6 @@ function saludar () {
 }
 
 // Usando parametros
-
-// Parametros de entrada
-
-function saludarAUnCliente(nombreCliente) {
-    alert('Hola' + nombreCliente + 'como va!');
-}
 
 let nombrethree;
 nombrethree = prompt('Ingrese su nombre');
@@ -185,17 +177,6 @@ function calculadora(num1, num2, operacion) {
     }
 }
 
-// Expresión de función - función anonima
-
-function saludar() {
-    alert('Hola, ¿cómo va?')
-}
-
-// En forma de expreción de función
-
-const saludardos = function () {
-    alert('Hola, ¿cómo va?');
-}
 
 saludar();
 
@@ -240,52 +221,6 @@ function imprimirNumero() {
 
 imprimirNumero();
 console.log(numero); // 3
-
-// Nos planteamos una calculadora
-/*
- 1- + sumar
- 2- - restar
- 3- / dividir
- 4- * multiplicar
-*/
-
-const SUMAR = 1; 
-const RESTAR = 2;
-const DIVIDIR = 3;
-const MULTIPLICAR = 4;
-
-let num1;
-let num2;
-let resultado0 = 0;
-let opcion;
-let operacion = 
-
-alert('Bienvenido a la calculadora');
-num1 = parseFloat(prompt('Ingrese un número'));
-num2 = parseFloat(prompt('Ingrese otro número'));
-opcion = parseInt(prompt(` 1- + sumar \n
-                  2- - restar \n
-                  3- / dividir \n
-                  4- * multiplicar \n
-                  Ingrese su opción:`));
-
-if (opcion === 1) {
-    resultado = num1 + num2;
-} else {
-    if (opcion === RESTAR) {
-        resultado = num1 - num2
-    } else {
-        if (opcion === DIVIDIR) {
-            resultado = num1 / num2;
-        } else {
-            if (opcion === MULTIPLICAR) {
-                resultado0 = num1 * num2
-            }
-        }
-    }
-}
-
-console.log('El resultado es:' + resultado0)
 
 // Una persona
 
