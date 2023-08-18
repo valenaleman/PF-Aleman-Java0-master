@@ -1,9 +1,7 @@
 const miOpcion = document.getElementById('op');
 
-miOpcion.onclick = () => {
-    (async () => {
-
-        const { value: fruit } = await Swal.fire({
+miOpcion.onclick = async () => {
+        const { value: edad } = await Swal.fire({
           title: 'Seleccione una opción',
           input: 'select',
           inputOptions: {
@@ -14,8 +12,7 @@ miOpcion.onclick = () => {
           },
           inputPlaceholder: 'Opciónes',
         })
-        if (adultos) {
-          Swal.fire(`Usted selecciono: ${adultos}`)
+        if (edad) {
+          Swal.fire(`Usted selecciono: ${edad}`)
         }
-        })()
 }

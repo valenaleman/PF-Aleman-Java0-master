@@ -11,9 +11,7 @@ miBoton.onclick = () => {
       })
 }
 
-miBotonDos.onclick = () => {
-  (async () => {
-
+miBotonDos.onclick = async () => {
     const { value: email } = await Swal.fire({
       title: 'Ingrese su email',
       input: 'email',
@@ -39,6 +37,4 @@ miBotonDos.onclick = () => {
     if (password) {
       Swal.fire(`Entered password: ${password}`)
     }
-    
-    })()
 }
